@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorpresa para Bonny</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="initialMessage">Qhubo reina, te tengo una sorpresa</h1>
+        <div id="options">
+            <button onclick="handleChoice('meValePito')">Me vale pito</button>
+            <button onclick="handleChoice('aVer')">A ver jsjsj</button>
+        </div>
+        <div id="result" class="hidden">
+            <p id="message"></p>
+            <img id="gif" class="hidden" src="" alt="GIF">
+            <div id="nextOptions" class="hidden">
+                <button id="nextButton" onclick="handleNextStep()">A</button>
+            </div>
+            <div id="catOptions" class="hidden">
+                <button id="catButton" onclick="showCat()">Ay yaaaa</button>
+            </div>
+            <div id="finalOptions" class="hidden">
+                <button onclick="handleFinalChoice('ti')">Ti</button>
+                <button onclick="handleFinalChoice('nunca')">Nunca, soy hetere</button>
+            </div>
+            <button id="endButton" class="hidden" onclick="endProgram()">Uy, bueno</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
